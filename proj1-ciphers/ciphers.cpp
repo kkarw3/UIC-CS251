@@ -181,7 +181,6 @@ char rot(char c, int amount)
 
 string rot(const string& line, int amount)
 {
-  // TODO: student
   string result = "";
 
   for (char c : line)
@@ -204,7 +203,6 @@ string rot(const string& line, int amount)
 // Encrypts a given string using rot()
 void caesarEncryptCommand()
 {
-  // TODO: student
   string inputString;
   int rotateAmount;
   string rotateAmountString;
@@ -266,7 +264,6 @@ vector<string> splitBySpaces(const string& s)
 
 string joinWithSpaces(const vector<string>& words)
 {
-  // TODO: student
   string result;
 
   for (int i = 0; i < words.size(); i++)
@@ -302,7 +299,6 @@ int numWordsIn(const vector<string>& words, const vector<string>& dict)
 
 void caesarDecryptCommand(const vector<string>& dict)
 {
-  // TODO: student
   string userInput;
   vector<string> inputWords;
   bool decryptionsFound = false;
@@ -417,8 +413,6 @@ void computeEnglishnessCommand(const QuadgramScorer& scorer)
 
 vector<char> hillClimb(const QuadgramScorer& scorer, const string& ciphertext)
 {
-  // TODO: student
-
   vector<char> bestCaseCipher = genRandomSubstCipher();
   string bestCaseDecryption = applySubstCipher(bestCaseCipher, ciphertext);
   double bestCaseScore = scoreString(scorer, clean(bestCaseDecryption));
@@ -484,7 +478,6 @@ vector<char> decryptSubstCipher(const QuadgramScorer& scorer, const string& ciph
 
 void decryptSubstCipherCommand(const QuadgramScorer& scorer)
 {
-  // TODO: student
   string userCiphertext;
   getline(cin, userCiphertext);
 
