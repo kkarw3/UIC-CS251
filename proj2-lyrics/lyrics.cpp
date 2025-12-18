@@ -62,7 +62,6 @@ string cleanToken(const string& token)
 
 set<string> gatherTokens(const string& text)
 {
-  // TODO student
   stringstream ss(text);
   string word;
   set<string> gatheredTokens;
@@ -114,7 +113,6 @@ int buildIndices(const string& filename, map<string, set<string>>& inverted_inde
 
 set<string> findQueryMatches(const map<string, set<string>>& index, const string& sentence)
 {
-  // TODO student
   stringstream ss(sentence);
   string token;
 
